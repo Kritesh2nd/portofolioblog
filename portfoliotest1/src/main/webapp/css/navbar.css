@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Rubik', sans-serif; */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-family: 'Rubik', sans-serif;
+}
+*:focus {
+  outline: none;
+}
+.border {
+  border: 1px solid #000;
+}
+.borderr {
+  border: 1px solid #f00;
+}
+.borderb {
+  border: 1px solid #0f0;
+}
+.abs {
+  position: absolute;
+}
+.ins {
+  height: 100%;
+  width: 100%;
+}
+.w100 {
+  width: 100%;
+}
+.h100 {
+  height: 100%;
+}
+.rel {
+  position: relative;
+}
+.flex {
+  display: flex;
+}
+.jcc {
+  justify-content: center;
+}
+.jcsb {
+  justify-content: space-between;
+}
+.jcsa {
+  justify-content: space-around;
+}
+.aic {
+  align-items: center;
+}
+.aifs {
+  align-items: flex-start;
+}
+.aife {
+  align-items: flex-end;
+}
+.fdc {
+  flex-direction: column;
+}
+.jcfs{
+  justify-content: flex-start;
+}
+.jcfe{
+  justify-content: flex-end;
+}
+:root {
+  --fontfamily06: 'Rubik', sans-serif;
+}
+.navmainbody{height:70px;overflow:auto;}
+.navbody{padding:10px 50px;}
+.navspanC{background:#fff;right:0;bottom:0;height:100%;width:100%;z-index:-1;}
+.navspanD{background:#000;right:0;bottom:0;height:100%;width:0%;z-index:-1;animation: lol .3s linear forwards;}
+.navbodyres{flex-grow: 1;background:#000;overflow: hidden;width:0;animation: lol .3s linear forwards;}
+.navbodyleft,.navbodyright{width:50%;}
+.navullist{list-style-type: none;}
+.lis{padding:0 5px;}
+.ahr{font-size:16px;font-weight:300;color:#000;text-decoration: none;padding:5px 10px;animation: lol .3s linear forwards;}
+.navspanA{background:#000;left:15%;bottom:0;height:1px;width:70%;display:none;}
+.navspanAactive{display: block;}
+.navbodybarsbox{display: none;width:40%;}
+.navbarsbox{height:40px;width:40px;}
+.navspanEs{width:100%;height:2px;background:#000;animation: lol .45s forwards ease-in-out;transform: rotate(0deg) 
+  translate(0,0);transform-origin: top left;opacity:1;border-radius:2px;}
+.navspanE1{top:8px;}
+.navspanE2{top:20px;}
+.navspanE3{top:32px;}
+.navtitlebox{font-size:30px;font-family:var(--fontfamily06);}
+.navbodyres{display:none;}
+@media only screen and (max-width: 450px) {
+  .navmainbody{height:100vh;position:fixed;}
+  .navbody{padding:10px;}
+  .navbodyleft{width:60%;}
+  .navbodyright{display: none;}
+  .navbodybarsbox{display: flex;}
+  .navbodyres{display:flex;}
+  .navullist{padding-top:50px;}
+  .lis{padding:10px 0 20px 0;}
+  .ahr{font-size:20px;width:100%;text-align: center;background:#000;color:#fff;}
+  .navspanB{display: none;}
+}
+@keyframes navAnimate1S{
+  from{width:0%;}
+  to{width:100%;}
+}
+@keyframes navAnimate1E{
+  from{width:100%;}
+  to{width:0%;}
+}
+@keyframes navAnimate2S{
+  from{background:#fff;color:#000;}
+  to{background:#000;color:#fff;}
+}
+@keyframes navAnimate2E{
+  from{background:#000;color:#fff;}
+  to{background:#fff;color:#000;}
+}
+@keyframes navAnimate3S{
+  from{width:0;}
+  to{width:100%;}
+}
+@keyframes navAnimate3E{
+  from{width:100%;}
+  to{width:0;}
+}
+@keyframes navAnimate4AS {
+  from{transform: rotate(0deg) translate(0,0);background:#000;}
+  to{transform: rotate(45deg) translate(3px,-6px);background:#fff;}
+}
+@keyframes navAnimate4AE {
+  from{transform: rotate(45deg) translate(3px,-6px);background:#fff;}
+  to{transform: rotate(0deg) translate(0,0);background:#000;}
+}
+@keyframes navAnimate4BS {
+  from{transform:translate(0,0);opacity:1;background:#000;}
+  to{transform:translate(-12px,0);opacity:0;background:#fff;}
+}
+@keyframes navAnimate4BE {
+  from{transform:translate(-12px,0);opacity:0;background:#fff;}
+  to{transform:translate(0,0);opacity:1;background:#000;}
+}
+@keyframes navAnimate4CS {
+  from{transform: rotate(0deg) translate(0,0);background:#000;}
+  to{transform: rotate(-45deg) translate(3px,5px);background:#fff;}
+}
+@keyframes navAnimate4CE {
+  from{transform: rotate(-45deg) translate(3px,5px);background:#fff;}
+  to{transform: rotate(0deg) translate(0,0);background:#000;}
+}

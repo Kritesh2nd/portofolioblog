@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+<title>hi</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+
+#sayoutloud {width: 100px;height: 20px;border: 1px solid black;background-color:#fafafa; font-weight: bolder;
+    color:#fe143d;text-align: center;}
+</style>
+</head>
+<body>
+<button onclick="ajaxcall()">Ajax Call</button>
+<p>to say...</p>
+<div id="sayoutloud">hg</div>
+<input type="text">
+<script>
+    function ajaxcall(){
+        $.ajax({url:"firstclone",type:"GET",dataType:"html"})
+        .done(function (msg){
+            $("#sayoutloud").html(msg)
+        })
+    }
+</script>
+</body>
+</html>
